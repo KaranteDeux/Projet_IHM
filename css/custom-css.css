@@ -1,4 +1,27 @@
-.customt-card
-customt-card
-customt-card
+/** Styling of the notes **/
 
+/** Styling of the notes **/
+
+
+/** Styling for the navbar **/
+.open-searchbar
+{
+    color: black;
+    background-color : #fbc02d;
+    margin-right: 0.8rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-radius: 35px;
+
+}
+
+.open-sidenav
+{
+    color : black;
+    background-color : #fbc02d;
+    margin-left: 0.8rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-radius: 35px;
+}
+/** Styling for the navbar **/
