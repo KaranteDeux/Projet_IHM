@@ -24,3 +24,4 @@ Projet d'IHM
 	- liste de notes
 	- afficher une note
 	- liste des profils autorisés à modifier une note
+	- résumé
