@@ -1,3 +1,9 @@
-/**
- * Created by wassim on 29/03/16.
- */
+$(document).ready(function(){
+
+    $(".button-collapse").sideNav({
+        menuWidth: 300, // Default is 240
+        edge: 'right', // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    });
+    $('.collapsible').collapsible();
+});
