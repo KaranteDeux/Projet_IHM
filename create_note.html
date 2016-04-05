@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accueil</title>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/custom-css.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+
+	<nav class="transparent z-depth-0">
+
+		<ul id="slide-out" class="side-nav">
+            <li><a href="create_note.html">Add a note</a></li>
+            <li><a href="map.html">View users location</a></li>
+        </ul>
+
+        <ul class="left">
+            <li> <a href="#" data-activates="slide-out" class="open-sidenav"><i class="mdi-navigation-menu"></i></a></li>
+        </ul>
+
+	</nav>
+
+	<div class="row">
+		<div class="input-field col m2 s12">
+			<input id="textarea1" type="text" class="materialize-textarea" placeholder="Put a clear and comprehensive title"></textarea>
+			<label for="textarea1">Note title</label>
+		</div>
+		<div class="input-field col m10 s12">
+			<textarea id="textarea1" class="materialize-textarea" placeholder="Write here your text"></textarea>
+			<label for="textarea1">Note content</label>
+		</div>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script>
+
+	setInterval(timer, 10000) // Every 10 seconds
+
+	function timer() {
+  		Materialize.toast('Note saved !', 4000) // 4000 is the duration of the toast
+  	}
+  	</script>
+
+  </body>
+  </html>

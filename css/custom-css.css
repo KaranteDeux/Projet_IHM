@@ -25,3 +25,31 @@
     border-radius: 35px;
 }
 /** Styling for the navbar **/
+
+
+/** Styling the rating stars **/
+
+
+.rating {
+    direction: rtl;
+    text-align: center;
+    unicode-bidi: bidi-override;
+}
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+    font-size:20;
+}
+.rating > span:hover, .rating > span:hover ~ span {
+    color: transparent;
+}
+.rating > span:hover::before, .rating > span:hover ~ span::before {
+    color: blue;
+    content: "★";
+    left: 0;
+    position: absolute;
+}
+
+
+/** Styling the rating stars **/

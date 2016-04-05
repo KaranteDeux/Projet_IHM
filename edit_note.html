@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accueil</title>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/custom-css.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+
+	<nav class="transparent z-depth-0">
+
+		<ul class="right">
+			<li><a href="#" class="open-searchbar"><i class="material-icons">search</i></a></li>
+		</ul>
+
+		<ul id="slide-out" class="side-nav">
+			<li><a href="#!">First Sidebar Link</a></li>
+			<li><a href="map.html">View users location</a></li>
+		</ul>
+
+		<ul class="left">
+			<li> <a href="#"  data-activates="slide-out" class="open-sidenav"><i class="mdi-navigation-menu"></i></a></li>
+		</ul>
+
+	</nav>
+
+	<textarea>
+
+	</textarea>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script>
+
+	setInterval(timer, 10000) // Every 10 seconds
+
+	function timer() {
+  		Materialize.toast('Note saved !', 4000) // 4000 is the duration of the toast
+  	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accueil</title>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/custom-css.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+
+	<nav class="transparent z-depth-0">
+
+		<ul class="right">
+			<li><a href="#" class="open-searchbar"><i class="material-icons">search</i></a></li>
+		</ul>
+
+		<ul id="slide-out" class="side-nav">
+			<li><a href="#!">First Sidebar Link</a></li>
+			<li><a href="map.html">View users location</a></li>
+		</ul>
+
+		<ul class="left">
+			<li> <a href="#"  data-activates="slide-out" class="open-sidenav"><i class="mdi-navigation-menu"></i></a></li>
+		</ul>
+
+	</nav>
+
+	<div class="row">
+		<div id="content">
+		</div>
+	</div>
+
+	<script src="js/globe.js"></script>
+	<script src="js/third-party/Detector.js"></script>
+	<script src="js/third-party/Tween.js"></script>
+	<script src="js/third-party/three.min.js"></script>
+
+	<script>
+
+	var opts = {};
+    opts['imgDir'] = '/img/'; 
+
+	var globe = new DAT.Globe( document.getElementById('content'), opts);
+
+	var data =
+	[
+	['Test', [ 53.553812, 0, 0.2,
+	53.553811, 4.5, 0.3,
+	53.553811, 9.991586, 0.5,
+	53.553813, 13.5, 0.4]]
+	];
+
+    // Tell the globe about your JSON data
+    for ( var i = 0; i < data.length; i ++ ) {
+    	console.log("log : " + data[i])
+    	globe.addData( data[i][1], {format: 'magnitude', name: data[i][0] } );
+    }
+
+    // Create the geometry
+    globe.createPoints();
+
+    // Begin animation
+    globe.animate();
+
+
+    </script>
+</body>
+</html>
