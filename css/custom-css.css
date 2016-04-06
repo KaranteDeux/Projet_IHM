@@ -1,9 +1,18 @@
 /** Styling of the notes **/
+.card-options-title
+{
+
+}
+
 
 /** Styling of the notes **/
 
 
 /** Styling for the navbar **/
+nav
+{
+    margin-bottom: 1.8rem;
+}
 .open-searchbar
 {
     color: black;
@@ -28,28 +37,6 @@
 
 
 /** Styling the rating stars **/
-
-
-.rating {
-    direction: rtl;
-    text-align: center;
-    unicode-bidi: bidi-override;
-}
-.rating > span {
-    display: inline-block;
-    position: relative;
-    width: 1.1em;
-    font-size:20;
-}
-.rating > span:hover, .rating > span:hover ~ span {
-    color: transparent;
-}
-.rating > span:hover::before, .rating > span:hover ~ span::before {
-    color: blue;
-    content: "★";
-    left: 0;
-    position: absolute;
-}
 
 .cours{
 	width : 100%;
@@ -116,3 +103,30 @@
 }
 
 /** Styling the rating stars **/
+
+#modal_rate
+{
+    height:200px;
+}
+
+.rating-modal-content
+{
+    margin-top: 35px;
+}
+
+/** Styling the rating stars **/
+
+
+/** Styling share modal **/
+
+.sendto-item
+{
+    cursor: Pointer;
+}
+
+
+.sendto-item a
+{
+    color : #e0e0e0;
+}
+/** Styling share modal **/
