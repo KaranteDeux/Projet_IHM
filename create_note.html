@@ -137,22 +137,27 @@
 
 <script>
     $(document).ready(function () {
-
-        $('.row').masonry({
-            itemSelector: '.note-item',
-            percentPosition: true,
-        });
-
         $('select').material_select();
 
-        $('.organize').hover(function () {
+
+        var $notes = $('.row').packery({
+            itemSelector: '.note-item',
+            transitionDuration: 0,
+            percentPosition: true,
+            columnWidth: '.m4',
+        });
+        var $items = $notes.find('.note-item').draggable();
+
+        $notes.packery( 'bindUIDraggableEvents', $items );
+
+        $('.organize').hover(function(){
             $('.horizontal-fixed').openFAB();
         });
+
 
         $('.color-select').on('change', function(){
             $('.color-select').css('background-color', $( ".color-select option:selected" ).text())
         });
-
     });
 </script>
 <script>

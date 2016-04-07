@@ -343,6 +343,51 @@
         </div>
     </div>
 
+    <div class="col s12 m4 l3 svl note-item waves-effect waves-white">
+        <div class="card blue hoverable">
+            <div class="card-image">
+                <img src="img/sample.jpg">
+                <div class="options-activator activator right">
+                    <i class="material-icons">more_vert</i>
+                </div>
+                <span class="card-title activator">Card Title</span>
+            </div>
+            <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                <div class="card-footer"> <p class="right small-details">12-03-2015 - <b>SVL</b> - You</p></div>
+            </div>
+
+            <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                    <span class="card-title grey-text text-darken-4">
+                        <div class="card-options-title">Some options<i class="material-icons right">close</i></div>
+                    </span>
+
+                <div class="row">
+                    <div class="col s3">
+                        <a class="allowed-trigger" href="#modal_allowed_users"><div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div></a>
+                        <div class="center">Editors</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="add-editor-trigger" href="#add_editor"><div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div></a>
+                        <div class="center">Manage</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="share-trigger" href="#modal_share"><div class="center transfert" style="cursor: pointer;"><i class="mdi-content-forward small"></i></div></a>
+                        <div class="center">Send</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="modal-rate" href="#modal_rate"><div class="center rate" style="cursor: pointer;"><i class="mdi-action-stars small"></i></div></a>
+                        <div class="center">Rate it</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="col s12 m4 l3 ihm note-item waves-effect waves-white">
         <div class="card red hoverable">
             <div class="options-activator activator right">
@@ -608,14 +653,21 @@
 <script src="js/isotope.js"></script>
 <script src="js/custom-interface.js"></script>
 <script src="js/notes-interface.js"></script>
+<script src="js/jqueryui/jquery-ui.min.js"></script>
+<script src="js/packery.js"></script>
 
 <script>
     $(document).ready(function () {
 
-        $('.row').masonry({
+        var $notes = $('.row').packery({
             itemSelector: '.note-item',
+            transitionDuration: 0,
             percentPosition: true,
+            columnWidth: '.m4',
         });
+
+        var $items = $notes.find('.note-item').draggable();
+        $notes.packery( 'bindUIDraggableEvents', $items );
 
         $('.organize').hover(function(){
            $('.horizontal-fixed').openFAB();
