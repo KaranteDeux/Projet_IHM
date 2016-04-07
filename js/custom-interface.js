@@ -62,7 +62,6 @@ $(document).ready(function(){
         }
     );
 
-
     $('.collection-item').on('click', function(){
         $(this).addClass('green');
     });
@@ -70,5 +69,21 @@ $(document).ready(function(){
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////// Share  a note modal /////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    $('.add-editor-trigger').leanModal({
+        dismissible: true, // Modal can be dismissed by clicking outside of the modal
+        opacity: .5, // Opacity of modal background
+        in_duration: 300, // Transition in duration
+        out_duration: 200, // Transition out duration
+        complete: function() { Materialize.toast("User(s) added !", 4000); }
+    });
+
+    $('.allowed-trigger').leanModal({
+        dismissible: true, // Modal can be dismissed by clicking outside of the modal
+        opacity: .5, // Opacity of modal background
+        in_duration: 300, // Transition in duration
+        out_duration: 200, // Transition out duration
+        complete: function() { Materialize.toast("User(s) removed !", 4000); }
+    });
 
 });

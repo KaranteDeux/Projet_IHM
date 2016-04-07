@@ -1,9 +1,13 @@
 /** Styling of the notes **/
-.card-options-title
+.card-footer
 {
-
+    margin: 25px 0 30px 0;
 }
 
+.small-details
+{
+    font-size: 12px;
+}
 
 /** Styling of the notes **/
 
@@ -114,6 +118,15 @@ nav
     margin-top: 35px;
 }
 
+.collection-item a 
+{
+    color: #e0e0e0;
+}
+
+.checked-star
+{
+    color: #FFCE1B;
+}
 /** Styling the rating stars **/
 
 

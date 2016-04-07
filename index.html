@@ -27,7 +27,7 @@
     </ul>
 </nav>
 
-
+<!-- Share note modal structure -->
 <div class="modal" id="modal_share" style="z-index: 1003;">
     <div class="modal-content">
         <h4>Choose where to send it</h4>
@@ -56,60 +56,114 @@
             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
         </div>
     </div>
-
 </div>
 
-<div class="modal" id="modal2" style="z-index: 1003;">
+<!-- Giving acces modal structure -->
+<div class="modal" id="add_editor" style="z-index: 1003;">
+
     <div class="modal-content">
         <h4>Allow user(s) to edit this note</h4>
-        <p>
-        <ul>
-            <li style="cursor:pointer;">
-                <input type="checkbox" class="filled-in" id="checkbox1" />
-                <label for="checkbox1">Jean Michel</label>
+        <ul class="collection">
+
+            <li class="collection-item avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg" alt="" class="circle">
+                <span class="title"><b>Canaan Haimo</b></span>
+                <p>Master 1 - Lille 1<br></p>
+                <a href="#!" class="secondary-content">
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                </a>
             </li>
-            <li style="cursor:pointer;">
-                <input type="checkbox" class="filled-in" id="checkbox2" />
-                <label for="checkbox2">Jean Luc</label>
+
+            <li class="collection-item avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg" alt="" class="circle">
+                <span class="title"><b>Grant Dimas</b></span>
+                <p>Licence 3 - Lille 1<br></p>
+                <a href="#!" class="secondary-content">
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                </a>
             </li>
-            <li style="cursor:pointer;">
-                <input type="checkbox" class="filled-in" id="checkbox3" />
-                <label for="checkbox3">Jean Paul</label>
+
+            <li class="collection-item avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/mlane/128.jpg" alt="" class="circle">
+                <span class="title"><b>Cronus Dobrosław</b></span>
+                <p>Master 2 - Lille 2<br></p>
+                <a href="#!" class="secondary-content">
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                </a>
             </li>
+
         </ul>
-        </p>
-    </div>
-    <div class="modal-footer">
-        <button class="btn add_editor_choice">Add</button>
-    </div>
-</div>
 
-
-<div class="modal" id="modal3" style="z-index: 1003;">
-    <div class="modal-content">
-        <h4>Users allowed to edit this note</h4>
-        <p>
-        <ul>
-            <li class="add_editor_choice" style="cursor:pointer;">Michel</li>
-            <li class="add_editor_choice" style="cursor:pointer;">Luc</li>
-            <li class="add_editor_choice" style="cursor:pointer;">Paul</li>
-        </ul>
-        </p>
-    </div>
-    <div class="modal-footer">
-        <button class="btn remove_rights">Remove rights</button>
-        <button class="btn close_view_editors">Close</button>
-    </div>
-</div>
-
-<div class="modal bottom-sheet" id="modal4" style="z-index: 1003;">
-    <div class="modal-content">
-        <h4>Rate this note</h4>
-        <p>
-        <div class="rating rating_stars">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        <div class="modal-footer">
+            <a href="#!" class=" green modal-action modal-close waves-effect waves-green btn">Send</a>
+            <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
         </div>
-        </p>
+
+    </div>
+</div>
+
+<!-- Removing access to editors -->
+<div class="modal" id="modal_allowed_users" style="z-index: 1003;">
+    <div class="modal-content">
+        <h4>Manage editors rights</h4>
+        <ul class="collection">
+
+            <li class="collection-item avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg" alt="" class="circle">
+                <span class="title"><b>Canaan Haimo</b></span>
+                <p>Master 1 - Lille 1<br></p>
+                <a href="#!" class="secondary-content">
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                </a>
+            </li>
+
+            <li class="collection-item avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg" alt="" class="circle">
+                <span class="title"><b>Grant Dimas</b></span>
+                <p>Licence 3 - Lille 1<br></p>
+                <a href="#!" class="secondary-content">
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                </a>
+            </li>
+
+            <li class="collection-item avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/mlane/128.jpg" alt="" class="circle">
+                <span class="title"><b>Cronus Dobrosław</b></span>
+                <p>Master 2 - Lille 2<br></p>
+                <a href="#!" class="secondary-content">
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="modal-footer">
+            <a href="#!" class=" red modal-action modal-close waves-effect waves-green btn">Remove Rights</a>
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+        </div>
     </div>
 </div>
 
@@ -128,7 +182,6 @@
     </div>
 </div>
 
-
 <div class="row">
 
     <div class="col s12 m4 l3 note-item">
@@ -144,6 +197,7 @@
                     I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.
                 </p>
+                <div class="card-footer"> <p class="right small-details">12-03-2015 - <b>M3DS</b> - You</p></div>
             </div>
 
             <div class="card-reveal" style="display: none; transform: translateY(0px);">
@@ -153,12 +207,12 @@
 
                 <div class="row">
                     <div class="col s3">
-                        <div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div>
+                        <a class="allowed-trigger" href="#modal_allowed_users"><div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div></a>
                         <div class="center">Editors</div>
                     </div>
 
                     <div class="col s3">
-                        <div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div>
+                        <a class="add-editor-trigger" href="#add_editor"><div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div></a>
                         <div class="center">Manage</div>
                     </div>
 
@@ -187,6 +241,7 @@
                     I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.
                 </p>
+                <div class="card-footer"> <p class="right small-details">12-03-2015 - <b>IHM</b> - You</p></div>
             </div>
 
             <div class="card-reveal" style="display: none; transform: translateY(0px);">
@@ -196,187 +251,12 @@
 
                 <div class="row">
                     <div class="col s3">
-                        <div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div>
+                        <a class="allowed-trigger" href="#modal_allowed_users"><div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div></a>
                         <div class="center">Editors</div>
                     </div>
 
                     <div class="col s3">
-                        <div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div>
-                        <div class="center">Manage</div>
-                    </div>
-
-                    <div class="col s3">
-                        <a class="share-trigger" href="#modal_share"><div class="center transfert" style="cursor: pointer;"><i class="mdi-content-forward small"></i></div></a>
-                        <div class="center">Send</div>
-                    </div>
-
-                    <div class="col s3">
-                        <a class="modal-rate" href="#modal_rate"><div class="center rate" style="cursor: pointer;"><i class="mdi-action-stars small"></i></div></a>
-                        <div class="center">Rate it</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col s12 m4 l3 note-item">
-        <div class="card yellow hoverable">
-            <div class="card-content text-darken-1">
-                    <span class="card-title activator">Card Title
-                        <i class="material-icons right">more_vert</i>
-                    </span>
-                <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.
-                    I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.
-                    I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.
-                    I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.
-                    I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.
-                </p>
-            </div>
-
-            <div class="card-reveal" style="display: none; transform: translateY(0px);">
-                    <span class="card-title grey-text text-darken-4">
-                        <div class="card-options-title">Some options<i class="material-icons right">close</i></div>
-                    </span>
-
-                <div class="row">
-                    <div class="col s3">
-                        <div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div>
-                        <div class="center">Editors</div>
-                    </div>
-
-                    <div class="col s3">
-                        <div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div>
-                        <div class="center">Manage</div>
-                    </div>
-
-                    <div class="col s3">
-                        <a class="share-trigger" href="#modal_share"><div class="center transfert" style="cursor: pointer;"><i class="mdi-content-forward small"></i></div></a>
-                        <div class="center">Send</div>
-                    </div>
-
-                    <div class="col s3">
-                        <a class="modal-rate" href="#modal_rate"><div class="center rate" style="cursor: pointer;"><i class="mdi-action-stars small"></i></div></a>
-                        <div class="center">Rate it</div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="col s12 m4 l3 note-item">
-        <div class="card yellow hoverable">
-            <div class="card-content text-darken-1">
-                    <span class="card-title activator">Card Title
-                        <i class="material-icons right">more_vert</i>
-                    </span>
-                <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.
-                </p>
-            </div>
-
-            <div class="card-reveal" style="display: none; transform: translateY(0px);">
-                    <span class="card-title grey-text text-darken-4">
-                        <div class="card-options-title">Some options<i class="material-icons right">close</i></div>
-                    </span>
-
-                <div class="row">
-                    <div class="col s3">
-                        <div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div>
-                        <div class="center">Editors</div>
-                    </div>
-
-                    <div class="col s3">
-                        <div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div>
-                        <div class="center">Manage</div>
-                    </div>
-
-                    <div class="col s3">
-                        <a class="share-trigger" href="#modal_share"><div class="center transfert" style="cursor: pointer;"><i class="mdi-content-forward small"></i></div></a>
-                        <div class="center">Send</div>
-                    </div>
-
-                    <div class="col s3">
-                        <a class="modal-rate" href="#modal_rate"><div class="center rate" style="cursor: pointer;"><i class="mdi-action-stars small"></i></div></a>
-                        <div class="center">Rate it</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col s12 m4 l3 note-item">
-        <div class="card yellow hoverable">
-            <div class="card-content text-darken-1">
-                    <span class="card-title activator">Card Title
-                        <i class="material-icons right">more_vert</i>
-                    </span>
-                <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.
-                    I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.
-                </p>
-            </div>
-
-            <div class="card-reveal" style="display: none; transform: translateY(0px);">
-                    <span class="card-title grey-text text-darken-4">
-                        <div class="card-options-title">Some options<i class="material-icons right">close</i></div>
-                    </span>
-
-                <div class="row">
-                    <div class="col s3">
-                        <div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div>
-                        <div class="center">Editors</div>
-                    </div>
-
-                    <div class="col s3">
-                        <div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div>
-                        <div class="center">Manage</div>
-                    </div>
-
-                    <div class="col s3">
-                        <a class="share-trigger" href="#modal_share"><div class="center transfert" style="cursor: pointer;"><i class="mdi-content-forward small"></i></div></a>
-                        <div class="center">Send</div>
-                    </div>
-
-                    <div class="col s3">
-                        <a class="modal-rate" href="#modal_rate"><div class="center rate" style="cursor: pointer;"><i class="mdi-action-stars small"></i></div></a>
-                        <div class="center">Rate it</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col s12 m4 l3 note-item">
-        <div class="card yellow hoverable">
-            <div class="card-content text-darken-1">
-                    <span class="card-title activator">Card Title
-                        <i class="material-icons right">more_vert</i>
-                    </span>
-                <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.
-                </p>
-            </div>
-
-            <div class="card-reveal" style="display: none; transform: translateY(0px);">
-                    <span class="card-title grey-text text-darken-4">
-                        <div class="card-options-title">Some options<i class="material-icons right">close</i></div>
-                    </span>
-
-                <div class="row">
-                    <div class="col s3">
-                        <div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div>
-                        <div class="center">Editors</div>
-                    </div>
-
-                    <div class="col s3">
-                        <div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div>
+                        <a class="add-editor-trigger" href="#add_editor"><div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div></a>
                         <div class="center">Manage</div>
                     </div>
 
@@ -406,7 +286,12 @@
                     I am convenient because I require little markup to use effectively.
                     I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.
+                    I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.
+                    I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.
                 </p>
+                <div class="card-footer"> <p class="right small-details">12-03-2015 - <b>IHM</b> - You</p></div>
             </div>
 
             <div class="card-reveal" style="display: none; transform: translateY(0px);">
@@ -416,12 +301,187 @@
 
                 <div class="row">
                     <div class="col s3">
-                        <div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div>
+                        <a class="allowed-trigger" href="#modal_allowed_users"><div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div></a>
                         <div class="center">Editors</div>
                     </div>
 
                     <div class="col s3">
-                        <div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div>
+                        <a class="add-editor-trigger" href="#add_editor"><div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div></a>
+                        <div class="center">Manage</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="share-trigger" href="#modal_share"><div class="center transfert" style="cursor: pointer;"><i class="mdi-content-forward small"></i></div></a>
+                        <div class="center">Send</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="modal-rate" href="#modal_rate"><div class="center rate" style="cursor: pointer;"><i class="mdi-action-stars small"></i></div></a>
+                        <div class="center">Rate it</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col s12 m4 l3 note-item">
+        <div class="card yellow hoverable">
+            <div class="card-content text-darken-1">
+                    <span class="card-title activator">Card Title
+                        <i class="material-icons right">more_vert</i>
+                    </span>
+                <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.
+                </p>
+                <div class="card-footer"> <p class="right small-details">12-03-2015 - <b>CAR</b> - You</p></div>
+            </div>
+
+            <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                    <span class="card-title grey-text text-darken-4">
+                        <div class="card-options-title">Some options<i class="material-icons right">close</i></div>
+                    </span>
+
+                <div class="row">
+                    <div class="col s3">
+                        <a class="allowed-trigger" href="#modal_allowed_users"><div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div></a>
+                        <div class="center">Editors</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="add-editor-trigger" href="#add_editor"><div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div></a>
+                        <div class="center">Manage</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="share-trigger" href="#modal_share"><div class="center transfert" style="cursor: pointer;"><i class="mdi-content-forward small"></i></div></a>
+                        <div class="center">Send</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="modal-rate" href="#modal_rate"><div class="center rate" style="cursor: pointer;"><i class="mdi-action-stars small"></i></div></a>
+                        <div class="center">Rate it</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 m4 l3 note-item">
+        <div class="card yellow hoverable">
+            <div class="card-content text-darken-1">
+                    <span class="card-title activator">Card Title
+                        <i class="material-icons right">more_vert</i>
+                    </span>
+                <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.
+                    I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.
+                </p>
+                <div class="card-footer"> <p class="right small-details">12-03-2015 - <b>CAR</b> - You</p></div>
+            </div>
+
+            <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                    <span class="card-title grey-text text-darken-4">
+                        <div class="card-options-title">Some options<i class="material-icons right">close</i></div>
+                    </span>
+
+                <div class="row">
+                    <div class="col s3">
+                        <a class="allowed-trigger" href="#modal_allowed_users"><div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div></a>
+                        <div class="center">Editors</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="add-editor-trigger" href="#add_editor"><div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div></a>
+                        <div class="center">Manage</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="share-trigger" href="#modal_share"><div class="center transfert" style="cursor: pointer;"><i class="mdi-content-forward small"></i></div></a>
+                        <div class="center">Send</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="modal-rate" href="#modal_rate"><div class="center rate" style="cursor: pointer;"><i class="mdi-action-stars small"></i></div></a>
+                        <div class="center">Rate it</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 m4 l3 note-item">
+        <div class="card yellow hoverable">
+            <div class="card-content text-darken-1">
+                    <span class="card-title activator">Card Title
+                        <i class="material-icons right">more_vert</i>
+                    </span>
+                <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.
+                </p>
+                <div class="card-footer"> <p class="right small-details">12-03-2015 - <b>CAR</b> - You</p></div>
+            </div>
+
+            <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                    <span class="card-title grey-text text-darken-4">
+                        <div class="card-options-title">Some options<i class="material-icons right">close</i></div>
+                    </span>
+
+                <div class="row">
+                    <div class="col s3">
+                        <a class="allowed-trigger" href="#modal_allowed_users"><div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div></a>
+                        <div class="center">Editors</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="add-editor-trigger" href="#add_editor"><div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div></a>
+                        <div class="center">Manage</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="share-trigger" href="#modal_share"><div class="center transfert" style="cursor: pointer;"><i class="mdi-content-forward small"></i></div></a>
+                        <div class="center">Send</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="modal-rate" href="#modal_rate"><div class="center rate" style="cursor: pointer;"><i class="mdi-action-stars small"></i></div></a>
+                        <div class="center">Rate it</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 m4 l3 note-item">
+        <div class="card yellow hoverable">
+            <div class="card-content text-darken-1">
+                    <span class="card-title activator">Card Title
+                        <i class="material-icons right">more_vert</i>
+                    </span>
+                <p> I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.
+                    I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.
+                    I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.
+                </p>
+                <div class="card-footer"> <p class="right small-details">12-03-2015 - <b>M3DS</b> - You</p></div>
+            </div>
+
+            <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                    <span class="card-title grey-text text-darken-4">
+                        <div class="card-options-title">Some options<i class="material-icons right">close</i></div>
+                    </span>
+
+                <div class="row">
+                    <div class="col s3">
+                        <a class="allowed-trigger" href="#modal_allowed_users"><div class="center view_editors" style="cursor: pointer;"><i class="mdi-social-group small"></i></div></a>
+                        <div class="center">Editors</div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="add-editor-trigger" href="#add_editor"><div class="center add_editors" style="cursor: pointer;"><i class="mdi-social-group-add small"></i></div></a>
                         <div class="center">Manage</div>
                     </div>
 
@@ -453,57 +513,6 @@
         $('.row').masonry({
             itemSelector: '.note-item',
             percentPosition: true,
-        });
-
-        $('.delete').click(function(){
-            Materialize.toast('Note deleted !', 4000)
-
-            $(this).parents('.card').remove();
-        });
-
-        $('.transfert').click(function(){
-
-            $('#modal1').css('display', 'block');
-        });
-
-        $('.transfert_to_device').click(function(){
-            $('#modal1').css('display', 'none');
-            Materialize.toast('Note sent !', 4000)
-
-        });
-
-        $('.add_editors').click(function(){
-
-            $('#modal2').css('display', 'block');
-        });
-
-
-        $('.add_editor_choice').click(function(){
-            $('#modal2').css('display', 'none');
-            Materialize.toast('User(s) add !', 4000)
-
-        });
-
-        $('.view_editors').click(function(){
-
-            $('#modal3').css('display', 'block');
-        });
-
-        $('.close_view_editors').click(function(){
-
-            $('#modal3').css('display', 'none');
-        });
-
-        $('.rate').click(function(){
-
-            $('#modal4').css('display', 'block');
-        });
-
-        $('.rating_stars').click(function(){
-
-            $('#modal4').css('display', 'none');
-            Materialize.toast('Note rated !', 4000)
-
         });
     });
 </script>
