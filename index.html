@@ -10,14 +10,24 @@
 </head>
 <body>
 
+<div class="overlay-note"></div>
 
+<!-- Navigation bar & Slideout -->
 <nav class="transparent z-depth-0">
 
     <ul class="right">
+        <li><input type="text" class="search-bar"></li>
         <li><a href="#" class="open-searchbar"><i class="material-icons">search</i></a></li>
     </ul>
 
     <ul id="slide-out" class="side-nav">
+        <div class="user-details">
+            <div class="user-avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg" alt="" class="circle">
+                <span class="user-name"><b>Ibrahim Eustachys</b> <a class="right" href="profile.html"><i class="tiny material-icons">keyboard_arrow_down</i></a></span>
+                <span class="user-rank">Noteur pro</span>
+            </div>
+        </div>
         <li><a href="create_note.html">Add a note</a></li>
         <li><a href="map.html">View users location</a></li>
     </ul>
@@ -28,7 +38,7 @@
 </nav>
 
 <!-- Share note modal structure -->
-<div class="modal" id="modal_share" style="z-index: 1003;">
+<div class="modal" id="modal_share">
     <div class="modal-content">
         <h4>Choose where to send it</h4>
         <ul class="collection">
@@ -59,7 +69,7 @@
 </div>
 
 <!-- Giving acces modal structure -->
-<div class="modal" id="add_editor" style="z-index: 1003;">
+<div class="modal" id="add_editor">
 
     <div class="modal-content">
         <h4>Allow user(s) to edit this note</h4>
@@ -114,8 +124,64 @@
     </div>
 </div>
 
+<!-- Giving acces modal structure -->
+<div class="modal" id="share_active_note">
+
+    <div class="modal-content">
+        <h4>Share with your friends</h4>
+        <ul class="collection">
+
+            <li class="collection-item avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg" alt="" class="circle">
+                <span class="title"><b>Canaan Haimo</b></span>
+                <p>Master 1 - Lille 1<br></p>
+                <a href="#!" class="secondary-content">
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                </a>
+            </li>
+
+            <li class="collection-item avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg" alt="" class="circle">
+                <span class="title"><b>Grant Dimas</b></span>
+                <p>Licence 3 - Lille 1<br></p>
+                <a href="#!" class="secondary-content">
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                </a>
+            </li>
+
+            <li class="collection-item avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/mlane/128.jpg" alt="" class="circle">
+                <span class="title"><b>Cronus Dobrosław</b></span>
+                <p>Master 2 - Lille 2<br></p>
+                <a href="#!" class="secondary-content">
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="checked-star material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="modal-footer">
+            <a href="#!" class=" green modal-action modal-close waves-effect waves-green btn">Send</a>
+            <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
+        </div>
+
+    </div>
+</div>
+
 <!-- Removing access to editors -->
-<div class="modal" id="modal_allowed_users" style="z-index: 1003;">
+<div class="modal" id="modal_allowed_users">
     <div class="modal-content">
         <h4>Manage editors rights</h4>
         <ul class="collection">
@@ -182,14 +248,16 @@
     </div>
 </div>
 
+
 <div class="row">
 
-    <div class="col s12 m4 l3 note-item">
-        <div class="card yellow hoverable">
+    <div class="col s12 m4 l3 m3ds note-item waves-effect waves-white">
+        <div class="card green hoverable">
+            <div class="options-activator activator right">
+                <i class="material-icons">more_vert</i>
+            </div>
             <div class="card-content text-darken-1">
-                    <span class="card-title activator">Card Title
-                        <i class="material-icons right">more_vert</i>
-                    </span>
+                    <span class="card-title activator">Card Title</span>
                 <p>I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.
                     I am a very simple card. I am good at containing small bits of information.
@@ -230,12 +298,13 @@
         </div>
     </div>
 
-    <div class="col s12 m4 l3 note-item">
-        <div class="card yellow hoverable">
+    <div class="col s12 m4 l3 ihm note-item waves-effect waves-white">
+        <div class="card red hoverable">
+            <div class="options-activator activator right">
+                <i class="material-icons">more_vert</i>
+            </div>
             <div class="card-content text-darken-1">
-                    <span class="card-title activator">Card Title
-                        <i class="material-icons right">more_vert</i>
-                    </span>
+                    <span class="card-title activator">Card Title</span>
                 <p>I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.
                     I am a very simple card. I am good at containing small bits of information.
@@ -274,12 +343,13 @@
         </div>
     </div>
 
-    <div class="col s12 m4 l3 note-item">
-        <div class="card yellow hoverable">
+    <div class="col s12 m4 l3 ihm note-item waves-effect waves-white">
+        <div class="card red hoverable">
+            <div class="options-activator activator right">
+                <i class="material-icons">more_vert</i>
+            </div>
             <div class="card-content text-darken-1">
-                    <span class="card-title activator">Card Title
-                        <i class="material-icons right">more_vert</i>
-                    </span>
+                    <span class="card-title activator">Card Title</span>
                 <p>I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.
                     I am a very simple card. I am good at containing small bits of information.
@@ -325,12 +395,13 @@
         </div>
     </div>
 
-    <div class="col s12 m4 l3 note-item">
+    <div class="col s12 m4 l3 car note-item waves-effect waves-white">
         <div class="card yellow hoverable">
+            <div class="options-activator activator right">
+                <i class="material-icons">more_vert</i>
+            </div>
             <div class="card-content text-darken-1">
-                    <span class="card-title activator">Card Title
-                        <i class="material-icons right">more_vert</i>
-                    </span>
+                    <span class="card-title activator">Card Title</span>
                 <p>I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.
                 </p>
@@ -367,12 +438,13 @@
         </div>
     </div>
 
-    <div class="col s12 m4 l3 note-item">
+    <div class="col s12 m4 l3 car note-item waves-effect waves-white">
         <div class="card yellow hoverable">
+            <div class="options-activator activator right">
+                <i class="material-icons">more_vert</i>
+            </div>
             <div class="card-content text-darken-1">
-                    <span class="card-title activator">Card Title
-                        <i class="material-icons right">more_vert</i>
-                    </span>
+                    <span class="card-title activator">Card Title</span>
                 <p>I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.
                     I am a very simple card. I am good at containing small bits of information.
@@ -411,12 +483,13 @@
         </div>
     </div>
 
-    <div class="col s12 m4 l3 note-item">
+    <div class="col s12 m4 l3 car note-item waves-effect waves-white">
         <div class="card yellow hoverable">
+            <div class="options-activator activator right">
+                <i class="material-icons">more_vert</i>
+            </div>
             <div class="card-content text-darken-1">
-                    <span class="card-title activator">Card Title
-                        <i class="material-icons right">more_vert</i>
-                    </span>
+                    <span class="card-title activator">Card Title</span>
                 <p>I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.
                 </p>
@@ -453,12 +526,13 @@
         </div>
     </div>
 
-    <div class="col s12 m4 l3 note-item">
-        <div class="card yellow hoverable">
+    <div class="col s12 m4 l3 svl note-item waves-effect waves-white">
+        <div class="card blue hoverable">
+            <div class="options-activator activator right">
+                <i class="material-icons">more_vert</i>
+            </div>
             <div class="card-content text-darken-1">
-                    <span class="card-title activator">Card Title
-                        <i class="material-icons right">more_vert</i>
-                    </span>
+                    <span class="card-title">Card Title</span>
                 <p> I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.
                     I am a very simple card. I am good at containing small bits of information.
@@ -466,7 +540,7 @@
                     I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.
                 </p>
-                <div class="card-footer"> <p class="right small-details">12-03-2015 - <b>M3DS</b> - You</p></div>
+                <div class="card-footer"> <p class="right small-details">12-03-2015 - <b>SVL</b> - You</p></div>
             </div>
 
             <div class="card-reveal" style="display: none; transform: translateY(0px);">
@@ -499,13 +573,41 @@
 
         </div>
     </div>
+
 </div>
+
+<div class="fixed-action-btn horizontal horizontal-fixed" style="bottom: 60px; right: 24px;">
+    <a class="btn-floating btn-large red" style="opacity: 0">
+        <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating btn-large red IHM">IHM</a></li>
+        <li><a class="btn-floating btn-large orange darken-1 CAR">CAR</a></li>
+        <li><a class="btn-floating btn-large green M3DS">M3DS</a></li>
+        <li><a class="btn-floating btn-large blue SVL">SVL</a></li>
+        <li><a class="btn-floating btn-large grey ALL">ALL</a></li>
+    </ul>
+</div>
+
+<div class="fixed-action-btn first-fixed" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red z-depth-3">
+        <i class="material-icons">settings</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating orange lighten-1 tooltipped" data-position="left" data-delay="5" data-tooltip="Edit your profile"><i class="material-icons">person</i></a></li>
+        <li><a class="btn-floating red organize tooltipped" data-position="left" data-delay="5" data-tooltip="Sort notes"><i class="material-icons">reorder</i></a></li>
+        <li><a class="btn-floating green tooltipped share-trigger" data-position="left" data-delay="5" data-tooltip="Share displayed note"  href="#share_active_note"><i class="material-icons">share</i></a></li>
+        <li><a class="btn-floating blue tooltipped" data-position="left" data-delay="5" data-tooltip="Write a new note" href="create_note.html"><i class="material-icons">fiber_new</i></a></li>
+    </ul>
+</div>
+
 
 <script src="js/jquery.js"></script>
 <script src="js/materialize.min.js"></script>
 <script src="js/massonry.js"></script>
 <script src="js/isotope.js"></script>
 <script src="js/custom-interface.js"></script>
+<script src="js/notes-interface.js"></script>
 
 <script>
     $(document).ready(function () {
@@ -514,6 +616,11 @@
             itemSelector: '.note-item',
             percentPosition: true,
         });
+
+        $('.organize').hover(function(){
+           $('.horizontal-fixed').openFAB();
+        });
+
     });
 </script>
 </body>

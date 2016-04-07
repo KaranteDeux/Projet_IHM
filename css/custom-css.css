@@ -1,4 +1,42 @@
+/*
+
+========================================================
+ Background patterns are downloaded from www.subtlepatterns.com
+ If you need more, that's where to get'em.
+ ========================================================
+
+*/
+
+body
+{
+    background-image: url("../img/crossword.png");
+}
+
+.overlay-note
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 9;
+    display: none;
+}
+
+#content
+{
+    background-color: whitesmoke;
+    height: 40rem !important;
+
+}
+
 /** Styling of the notes **/
+
 .card-footer
 {
     margin: 25px 0 30px 0;
@@ -9,14 +47,69 @@
     font-size: 12px;
 }
 
+.options-activator
+{
+    padding-top: 17px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.card-content
+{
+    cursor: pointer;
+}
+
 /** Styling of the notes **/
 
 
+
+
 /** Styling for the navbar **/
+
+
+nav ul a:hover
+{
+    background-color: transparent;
+}
+
+.user-details
+{
+    height: 120px;
+    background: url(../img/24.jpg) -108% 22%;
+    color: #444444;
+}
+
+.user-avatar
+{
+    margin: -10px 0 0 0;
+}
+
+.user-avatar img
+{
+    float: left;
+    width: 64px;
+    margin: 37px 0 0 19px;
+}
+
+.user-name
+{
+    display: inline-block;
+    padding: 20px 0 0 0 !important;
+    margin: 0 0 0 15px !important;
+}
+
+.user-rank
+{
+    display: block;
+    padding: 0;
+    margin: -40px 0 0 97px !important;
+}
+
 nav
 {
     margin-bottom: 1.8rem;
 }
+
 .open-searchbar
 {
     color: black;
@@ -36,6 +129,17 @@ nav
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
     border-radius: 35px;
+}
+
+.search-bar
+{
+    background-color: #fbc02d !important;
+    margin: 17px -13px 0 7px !important;
+    width: 450px !important;
+    padding: 0 0 0 5px !important;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    color: #000;
 }
 /** Styling for the navbar **/
 
@@ -106,6 +210,9 @@ nav
 	background-color : blue;
 }
 
+
+
+
 /** Styling the rating stars **/
 
 #modal_rate
@@ -130,6 +237,10 @@ nav
 /** Styling the rating stars **/
 
 
+
+
+
+
 /** Styling share modal **/
 
 .sendto-item
@@ -143,3 +254,18 @@ nav
     color : #e0e0e0;
 }
 /** Styling share modal **/
+
+
+/** Styling add not form **/
+
+.add-note-contaier
+{
+    padding: 45px 10px 10px 10px !important;
+}
+
+.color-select, .module-select
+{
+    padding-left: 10px !important;
+}
+
+/** Styling add note form **/
