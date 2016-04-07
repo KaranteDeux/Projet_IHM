@@ -38,6 +38,9 @@ $(document).ready(function () {
 
     var $grid = $('.row').isotope({
         itemSelector: '.note-item',
+        percentPosition: true,
+        transitionDuration: 0,
+
     });
 
     $('.IHM').on('click', function(){
