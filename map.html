@@ -8,17 +8,21 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
-<body>
+<body style="background-color: #000">
 
 
 	<nav class="transparent z-depth-0">
 
-		<ul class="right">
-			<li><a href="#" class="open-searchbar"><i class="material-icons">search</i></a></li>
-		</ul>
-
 		<ul id="slide-out" class="side-nav">
-			<li><a href="#!">First Sidebar Link</a></li>
+			<div class="user-details">
+				<div class="user-avatar">
+					<img src="https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg" alt="" class="circle">
+					<span class="user-name"><b>Ibrahim Eustachys</b> <a class="right" href="profile.html"><i class="tiny material-icons">keyboard_arrow_down</i></a></span>
+					<span class="user-rank">Noteur pro</span>
+				</div>
+			</div>
+			<li><a href="index.html">View notes</a></li>
+			<li><a href="create_note.html">Add a note</a></li>
 			<li><a href="map.html">View users location</a></li>
 		</ul>
 
@@ -29,10 +33,19 @@
 
 	<div class="container">
 		<div class="row">
-			<div id="content" class="col s12">
+			<div id="content" class="col s12" style="background-color: #000">
 			</div>
 		</div>
 	</div>
+
+	<script src="js/jquery.js"></script>
+    <script src="js/jqueryui/jquery-ui.min.js"></script>
+    <script src="js/packery.js"></script>
+    <script src="js/massonry.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/custom-interface.js"></script>
+    <script src="js/notes-interface.js"></script>
 
 	<script src="js/globe.js"></script>
 	<script src="js/third-party/Detector.js"></script>
@@ -42,16 +55,38 @@
 	<script>
 
 	var opts = {};
-    opts['imgDir'] = '/img/'; 
+	opts['imgDir'] = '/projet_ihm/img/'; 
 
-	var globe = new DAT.Globe( document.getElementById('content'), opts);
+	var content = document.getElementById('content')
+	
+	var globe = new DAT.Globe( content, opts);
+
+	var renderer = new THREE.WebGLRenderer({
+		alpha: true
+	});
+	
+	renderer.setClearColor(0xffffff, 0);
+
+
+
 
 	var data =
 	[
-	['Test', [ 53.553812, 0, 0.2,
-	53.553811, 4.5, 0.3,
-	53.553811, 9.991586, 0.5,
-	53.553813, 13.5, 0.4]]
+		['Data',
+			[
+				50, 2.7, 0.21,
+				49, 3.1, 0.11,
+				51, 3.4, 0.15,
+				48, 2.1, 0.05,
+				50, 3.7, 0.05,
+				51, 2.1, 0.05,
+				52, 2.7, 0.05,
+				52, 3.1, 0.05,
+				47, 2.1, 0.05,
+				50, 3.1, 0.05,
+				50.5, 3.7, 0.05,
+			]
+		]
 	];
 
     // Tell the globe about your JSON data
@@ -65,7 +100,6 @@
 
     // Begin animation
     globe.animate();
-
 
     </script>
 </body>
