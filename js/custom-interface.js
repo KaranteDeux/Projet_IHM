@@ -14,10 +14,17 @@ $(document).ready(function(){
 
     $('.collapsible').collapsible();
 
+	var open = false;
     $('.open-searchbar').on('click', function(){
-
-        $('.search-bar').css('transform', 'scaleX(1)');
-        $('.search-bar').css('transition', 'all .3s');
+		if(!open){
+			open=true;
+			$('.search-bar').css('transform', 'scaleX(1)');
+			$('.search-bar').css('transition', 'all .3s');
+		}else{
+			open=false;
+			$('.search-bar').css('transform', 'scaleX(0)');
+			$('.search-bar').css('transition', 'all .3s');
+		}
     });
 
     $('.search-bar').on('blur', function(){
@@ -118,9 +125,4 @@ $(document).ready(function(){
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////// rights note modal ///////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	/*valider le texte modifié par le créateur de texte*/
-	$('.check').on('click', function(){
-        $(".doCheck").replaceWith("<span class=\"card-title activator\">Card Title</span></p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>");
-    });
 });

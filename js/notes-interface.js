@@ -62,4 +62,44 @@ $(document).ready(function () {
     $('.ALL').on('click', function(){
         $grid.isotope({filter : '.note-item'});
     });
+	
+	$("input").keyup(function (e) {
+		if (e.keyCode == 13) {
+			var edValue = document.getElementsByClassName("search-bar");
+			var text;
+			for(var i = 0;i < edValue.length;i++){
+				text = edValue[i].value;
+			}
+			if(text.toString().toUpperCase() == "IHM"){
+				$grid.isotope({filter : '.ihm'});
+			}else if(text.toString().toUpperCase() == "SVL"){
+				$grid.isotope({filter : '.svl'});
+			}else if(text.toString().toUpperCase() == "M3DS"){
+				$grid.isotope({filter : '.m3ds'});
+			}else if(text.toString().toUpperCase() == "CAR"){
+				$grid.isotope({filter : '.car'});
+			}else if(text.toString().toUpperCase() == "ALL"){
+				$grid.isotope({filter : '.note-item'});
+			}else if(text.toString() == "08-03-2015"){
+				$grid.isotope({filter : '.date'});
+			}else if(text.toString() == "12-03-2015"){
+				$grid.isotope({filter : '.date1'});
+			}else if(text.toString() == "14-03-2015"){
+				$grid.isotope({filter : '.date2'});
+			}else if(text.toString() == "19-03-2015"){
+				$grid.isotope({filter : '.date3'});
+			}else if(text.toString() == "15-03-2015"){
+				$grid.isotope({filter : '.date4'});
+			}else if(text.toString() == "22-03-2015"){
+				$grid.isotope({filter : '.date5'});
+			}else if(text.toString() == "21-03-2015"){
+				$grid.isotope({filter : '.date6'});
+			}
+		}
+	});
+	
+	/*valider le texte modifié par le créateur de texte*/
+	$('.check').on('click', function(){
+        $(".doCheck").replaceWith("<span class=\"card-title activator\">Card Title</span></p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>");
+    });
 })
