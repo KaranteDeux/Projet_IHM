@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/custom-css.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="progress" style="display: none; position: absolute; top: 50%;">
+    <div class="indeterminate"></div>
+</div>
+
+<div class="overlay-note"></div>
+
+<!-- Navigation bar & Slideout -->
+<nav class="transparent z-depth-0">
+
+    <ul class="right">
+        <li><input type="text" class="search-bar"></li>
+        <li><a href="#" class="open-searchbar"><i class="material-icons">search</i></a></li>
+    </ul>
+
+    <ul id="slide-out" class="side-nav">
+        <div class="user-details">
+            <div class="user-avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg" alt="" class="circle">
+                <span class="user-name"><b>Ibrahim Eustachys</b> <a class="right" href="profile.html"><i class="tiny material-icons">keyboard_arrow_down</i></a></span>
+                <span class="user-rank">Noteur pro</span>
+            </div>
+        </div>
+        <li><a href="create_note.html">Add a note</a></li>
+        <li><a href="map.html">View users location</a></li>
+    </ul>
+
+    <ul class="left">
+        <li> <a href="#" data-activates="slide-out" class="open-sidenav"><i class="mdi-navigation-menu"></i></a></li>
+    </ul>
+</nav>
+
+<div class="row">
+    <div class="col s12 cover red">
+        <center><img src="https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg" class="circle cover-avatar responsive-img z-depth-3"></center>
+
+        <ul class="tabs custom-tabs">
+            <li class="tab col s3 waves-effect waves-green"><a href="#test1">Profile</a></li>
+            <li class="tab col s3 waves-effect waves-green"><a class="active" href="#test2">Friends</a></li>
+            <li class="tab col s3 waves-effect waves-green"><a href="#test4">Stats</a></li>
+        </ul>
+    </div>
+    <div id="test1" class="col s12 profil-tab">
+       <h3>Edit your profile</h3>
+
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Enter your first name" id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input placeholder="Enter your last name" id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Enter your age" id="age" type="number" class="validate">
+                    <label for="age">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input placeholder="Enter your e-mail" id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <select>
+                        <option value="" disabled selected>Choose your country</option>
+                        <option value="1">France</option>
+                        <option value="2">Germany</option>
+                        <option value="3">Belgium</option>
+                    </select>
+                    <label>Country Select</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Enter the name of your university" id="university" type="text" class="validate">
+                    <label for="university">University</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Enter the name of your speciality" id="speciality" type="text" class="validate">
+                    <label for="speciality">University</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Enter your studies level" id="level" type="text" class="validate">
+                    <label for="level">University</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Enter your new password" id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+
+            <div class="row right">
+                <a class="waves-effect waves-teal btn-flat" type="reset">Clear form</a>
+                <a class="waves-effect waves-teal btn save-note" type="submit" href="#">save edits</a>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div id="test2" class="col s12 profil-tab friends-tab">
+        <h3>Your friends list</h3>
+
+        <ul>
+            <li class="col s12 m4">
+                <div class="card grey lighten-3 friend-card hoverable">
+                    <div class="card-content white-text friend-card-content">
+                        <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt=""></p>
+                        <span class="card-title" style="color: black; line-height: 30px">Youss Konakri</span><br>
+                        <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
+                        <span class="small-details" style="color: dimgrey"> Computer Science</span>
+                    </div>
+                    <div class="card-action friend-card-action">
+                        <a href="#" class="btn">Remove</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="col s12 m4">
+                <div class="card grey lighten-3 friend-card hoverable">
+                    <div class="card-content white-text friend-card-content">
+                        <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt=""></p>
+                        <span class="card-title" style="color: black; line-height: 30px">Youss Konakri</span><br>
+                        <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
+                        <span class="small-details" style="color: dimgrey"> Computer Science</span>
+                    </div>
+                    <div class="card-action friend-card-action">
+                        <a href="#" class="btn">Remove</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="col s12 m4">
+                <div class="card grey lighten-3 friend-card hoverable">
+                    <div class="card-content white-text friend-card-content">
+                        <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt=""></p>
+                        <span class="card-title" style="color: black; line-height: 30px">Youss Konakri</span><br>
+                        <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
+                        <span class="small-details" style="color: dimgrey"> Computer Science</span>
+                    </div>
+                    <div class="card-action friend-card-action">
+                        <a href="#" class="btn">Remove</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="col s12 m4">
+                <div class="card grey lighten-3 friend-card hoverable">
+                    <div class="card-content white-text friend-card-content">
+                        <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt=""></p>
+                        <span class="card-title" style="color: black; line-height: 30px">Youss Konakri</span><br>
+                        <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
+                        <span class="small-details" style="color: dimgrey"> Computer Science</span>
+                    </div>
+                    <div class="card-action friend-card-action">
+                        <a href="#" class="btn">Remove</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="col s12 m4">
+                <div class="card grey lighten-3 friend-card hoverable">
+                    <div class="card-content white-text friend-card-content">
+                        <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt=""></p>
+                        <span class="card-title" style="color: black; line-height: 30px">Youss Konakri</span><br>
+                        <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
+                        <span class="small-details" style="color: dimgrey"> Computer Science</span>
+                    </div>
+                    <div class="card-action friend-card-action">
+                        <a href="#" class="btn">Remove</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="col s12 m4">
+                <div class="card grey lighten-3 friend-card hoverable">
+                    <div class="card-content white-text friend-card-content">
+                        <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt=""></p>
+                        <span class="card-title" style="color: black; line-height: 30px">Youss Konakri</span><br>
+                        <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
+                        <span class="small-details" style="color: dimgrey"> Computer Science</span>
+                    </div>
+                    <div class="card-action friend-card-action">
+                        <a href="#" class="btn">Remove</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="col s12 m4">
+                <div class="card grey lighten-3 friend-card hoverable">
+                    <div class="card-content white-text friend-card-content">
+                        <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt=""></p>
+                        <span class="card-title" style="color: black; line-height: 30px">Youss Konakri</span><br>
+                        <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
+                        <span class="small-details" style="color: dimgrey"> Computer Science</span>
+                    </div>
+                    <div class="card-action friend-card-action">
+                        <a href="#" class="btn">Remove</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="fixed-action-btn horizontal horizontal-fixed" style="bottom: 60px; right: 24px;">
+    <a class="btn-floating btn-large red" style="opacity: 0">
+        <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating btn-large red IHM">IHM</a></li>
+        <li><a class="btn-floating btn-large orange darken-1 CAR">CAR</a></li>
+        <li><a class="btn-floating btn-large green M3DS">M3DS</a></li>
+        <li><a class="btn-floating btn-large blue SVL">SVL</a></li>
+        <li><a class="btn-floating btn-large grey ALL">ALL</a></li>
+    </ul>
+</div>
+
+<div class="fixed-action-btn first-fixed" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red z-depth-3">
+        <i class="material-icons">settings</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating orange lighten-1 tooltipped" data-position="left" data-delay="5" data-tooltip="Edit your profile"><i class="material-icons">person</i></a></li>
+        <li><a class="btn-floating red organize tooltipped" data-position="left" data-delay="5" data-tooltip="Sort notes"><i class="material-icons">reorder</i></a></li>
+        <li><a class="btn-floating green tooltipped share-trigger" data-position="left" data-delay="5" data-tooltip="Share displayed note"  href="#share_active_note"><i class="material-icons">share</i></a></li>
+        <li><a class="btn-floating blue tooltipped" data-position="left" data-delay="5" data-tooltip="Write a new note" href="create_note.html"><i class="material-icons">fiber_new</i></a></li>
+    </ul>
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/jqueryui/jquery-ui.min.js"></script>
+<script src="js/packery.js"></script>
+<script src="js/massonry.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/custom-interface.js"></script>
+<script src="js/notes-interface.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $('select').material_select();
+
+        var $notes = $('.row').packery({
+            itemSelector: '.note-item',
+            transitionDuration: 0,
+            percentPosition: true,
+            columnWidth: '.l3',
+        });
+
+        var $items = $notes.find('.note-item').draggable();
+        $notes.packery( 'bindUIDraggableEvents', $items );
+
+        $('.organize').hover(function(){
+            $('.horizontal-fixed').openFAB();
+        });
+
+    });
+</script>
+
+<script>
+
+    $('.save-note').on('click', function(){
+        $('.overlay-note').css('display', 'block');
+        $('.progress').css('display', 'block');
+        $('.progress').css('z-index', '10000000');
+
+        setInterval(redirectFunc, 3000)
+
+        function  redirectFunc() {
+            window.location.replace("profile.html");
+            Materialize.toast('Note saved !', 4000); // 4000 is the duration of the toast
+        }
+    });
+</script>
+</body>
+</html>
