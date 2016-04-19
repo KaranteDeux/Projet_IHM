@@ -1,0 +1,126 @@
+IHM 2016
+
+Wassim OUARTSI - Nabil MAIZ - Mohamed MEGDOUD - Antonin DUREY
+
+Brainstorming
+
+1 - 2 mecs connectés sur l’appli avec smartphone. 1 prend son cours et le glisse vers le téléphone de l‘autre, et le téléphone de l’autre l’affiche
+2 - Fonctionnalité d’avoir une liste d’amis 
+3 - Fonctionnalité d’autoriser le fait de recevoir/de partager les fichiers
+4 - Doc en ligne -> Prise de note participative avec validation du créateur (tout le monde)/validation pour tout le monde sauf prof/personnel autorisé
+5 - Ajout de documents sur le cloud (même principe : autoriser des personnes à accéder aux mêmes fichiers/dossiers…)
+6 - Idées de cercles d’amis.
+7 - Todo list pour des documents (espèce de calendrier avec des choses à faire, deadlines, avec rappel par notification...)
+8 - Scan/numérisation de document (audio, vidéo, papier, slide d’un PP…)
+9 - Imprimer les documents
+10 - Conversion selon format/type…
+11 - Auto-complétion (avec un espèce de dico, et abréviation couramment utilisés et possibilité de pouvoir en ajouter sur son compte/local)/Correction automatique 
+12 - Visualiser les notes en hologramme (en gras avec taille de 72, avec défilement comme dans Star Wars)    
+13 - Faire défiler les notes avec le mouvement des yeux
+14 - Multi support/responsive…
+15 - Partage/flux sur réseaux sociaux
+16 - Chat
+17 - Écrire à la main : avec stylet/au doigt
+18 - Reconnaissance de caractères écrits un par un
+19 - Possibilité de traduction
+20 - Envoi de message
+21 - Interaction avec les personnes proches (détectées) qui prennent des notes
+22 - Logiciel de dessin externe
+23 - Import de dessin/schéma/graphique/hologramme…
+24 - Ajout/suppression de note
+25 - Tri par dossier/catégorie/date/…
+26 - Recherche par dossier/catégorie/nom/date/thème/…
+27 - Évaluation de notes (notes et commentaires)
+28 - Top 10/100 des meilleures notes, des meilleurs noteurs
+29 - Split l’écran (X2/X3/X4)
+30 - Sauvegarde auto lors de prises de note (toutes les x minutes/heures)
+31 - Swipe
+32 - Icones automatiques de mise en valeur des notes 
+33 - Génération auto de notes/de TODO list/… en fonction des habitudes de l’utilisateur
+34 - Répartition automatique des tâches
+35 - Passer les droits d’un document, et passer les droits de pouvoir donner les droits
+36 - Copier
+37 - Coller
+38 - Undo
+39 - Redo
+40 - Créer des copie
+41 - Partage de copies
+42 - Modification de copies automatiques (l’originale est modifiée, les autres sont modifiées auto)
+43 - Forum
+44 - Suggestion de notes
+45 - Mise à disposition de documents
+46 - Notification de documents
+47 - Possibilité de suivre des noteurs
+
+
+Idées votées : 
+
+1 - 2 mecs connectés sur l’appli avec smartphone. 1 prend son cours et le glisse vers le téléphone de l‘autre, et le téléphone de l’autre l’affiche
+	Permet de partager une/des note(s) en quelques instants (prototype vidéo sur cet élément)
+	
+4 - Doc en ligne -> Prise de note participative avec validation du créateur (tout le monde)/validation pour tout le monde sauf prof/personnel autorisé
+	Permet de vérifier le contenu en le validant. Evite les ajouts inutiles et intempestifs, et permet donc de garder une certaine qualité sur les notes.
+
+7 - Todo list pour des documents (espèce de calendrier avec des choses à faire, deadlines, avec rappel par notification...)
+	Permet de se rappeler de choses à ajouter, d'erreurs à corriger…
+
+8 - Scan/numérisation de document (audio, vidéo, papier, slide d’un PP…)
+	Permet d'exporter des élements au format non transcriptible en texte, pour les restituer dans une note comme support ou en tant que note
+
+25 - Tri par dossier/catégorie/date/…
+	Permet d'avoir ses notes bien organisées et bien triées
+
+27 - Évaluation de notes (notes et commentaires)
+	Permet de donner un avis sur une note, de pouvoir trier les notes selon leur avis et de choisir la meilleure pour s'en inspirer
+
+33 - Génération auto de notes/de TODO list/… en fonction des habitudes de l’utilisateur
+	Propose des notes avec des titres/thèmes/... en accord avec les habitudes de l'utilisateur 
+
+42 - Modification de copies automatiques (l’originale est modifiée, les autres sont modifiées auto)
+	Evite de devoir retélécharger un document/une note/... lorsque celui-ci est modifié
+
+47 - Possibilité de suivre des noteurs
+	Permet de suivre ses noteurs préférés pour interagir avec eux, s'inspirer de leur note, éventuellement pouvoir les modifier...
+
+
+
+#########################
+	A REFAIRE
+#########################
+
+Scénario de conception :
+
+
+	Prénom : Bill Boulez
+	Age : 20
+	Activité : Etudiant qui assiste à une conférence
+Trait de caractère : tête en l'air, pas futé du tout, pas familier avec l'informatique DU TOUT, bref, c'est un boulet.
+
+
+Manuscrites :
+
+1) Gilles demande à Bill ses notes car il les a perdu. Bill en a besoin dans la journée et ne peut donc pas les partager avec Gilles.
+
+2) Gilles demande à Bill ses notes car il les a perdu. Cependant, Bill a aussi perdu ses notes.
+
+3) Bill a pris des notes mais il ne sait pas se relire.
+
+4) Bill essaie de prendre des notes mais il est trop lent. (auto-complétion)
+
+5) Bill prend des notes mais Bill est très mal organisé. (les deux cas : organisation par fichiers, ou dans les fichiers)
+
+6) Bill essaie de prendre des notes mais ne voit pas bien ce qui est écrit au tableau car il est au fond.
+
+7) Bill assiste à une conférence, et essaie de prendre des notes mais ne comprends pas l’écriture du médecin. De plus, Bill est très lent et n’arrive pas à suivre.
+
+Électroniques :
+
+1) Bill prend des notes. Pas de chance, l'application s'arrête. 
+
+2) Bill essaie d'ouvrir un document. Le système refuse d’ouvrir le fichier car le fichier est corrompu.
+
+3) Bill a pris ses notes mais il oublie de sauvegarder et lorsqu’il quitte l’application, elle lui propose de sauvegarder le document mais il clic quand même sur quitter
+
+
+
+

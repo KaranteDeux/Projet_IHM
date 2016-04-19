@@ -1,0 +1,87 @@
+IHM 2016
+
+Wassim OUARTSI - Nabil MAIZ - Mohamed MEGDOUD - Antonin DUREY
+
+Interviews :
+
+	Première :
+
+	- La semaine dernière, dans combien de cours avez vous pris des notes ?
+		3
+
+	- Avez vous réutilisé vous notes ? Vous ont-elles été utiles ?
+		Non/non
+
+	- Partagez vous vos notes (avec d'autres étudiants/personnes) ?
+		Oui
+
+	- Mettez vous en valeur les notions importantes ?
+		Oui
+
+	- Prenez vous des notes manuscrites ? électroniques ?
+		Oui/de temps en temps
+
+	- Avez vous pris des notes ce mation en IHM ? Si oui, comment les prenez-vous ? Sinon, pourquoi ?
+		Juste des mots clefs	 
+
+	- Avez vous eu du mal à prendre des notes pendant la semaine ? Si oui, pourquoi ? Sinon, comment faites vous ?
+		Oui : ne sais pas trop quoi écrire, les infos sont déjà sur les diapos
+
+	- Avez vous déjà perdu vos notes durant le semestre ? Si oui, comment les avez vous récupérées ?
+		Non
+
+	- Comment organisez vous vos notes ?
+		Pochette par matière, classification (cours n°1, TD n°1...)
+
+	- Dans quelle(s) situation(s) prenez vous le plus de notes ?
+		Les cours sans diapos, en TD car beaucoup d'exercices, les cours avec diapos mais non disponibles par la suite
+
+
+
+	Deuxième :
+
+	- La semaine dernière, dans combien de cours avez vous pris des notes ?
+		0
+
+	- Avez vous réutilisé vous notes ? Vous ont-elles été utiles ?
+		Oui/oui
+
+	- Partagez vous vos notes (avec d'autres étudiants/personnes) ?
+		Oui
+
+	- Mettez vous en valeur les notions importantes ?
+		Oui
+
+	- Prenez vous des notes manuscrites ? électroniques ?
+		Oui/non
+
+	- Avez vous pris des notes ce mation en IHM ? Si oui, comment les prenez-vous ? Sinon, pourquoi ?
+		Non, jamais de prise de notes en cours magistral	 
+
+	- Avez vous eu du mal à prendre des notes pendant la semaine ? Si oui, pourquoi ? Sinon, comment faites vous ?
+		Non, prend juste les notions importantes, le minimum
+
+	- Avez vous déjà perdu vos notes durant le semestre ? Si oui, comment les avez vous récupérées ?
+		Non
+
+	- Comment organisez vous vos notes ?
+		Matière et dates
+
+	- Dans quelle(s) situation(s) prenez vous le plus de notes ?
+		TD parce que exercices
+
+
+Scénario d’usage :
+
+	Prénom : Bill Boulez
+	Age : 20
+	Activité : Etudiant qui assiste à une conférence
+	Trait de caractère : tête en l'air, pas futé du tout
+
+	Scénario :
+    	Bill arrive en retard à une conférence présentée par un médecin. Heureusement, son voisin lui transmet ses notes en glissant le fichier concerné avec son smartphone. Bill dispose donc des notes prises 	lorsqu’il n’était pas encore arrivé.
+		Le médecin présente une série de diaporama avec graphes. Grâce à l’application, Bill les prend en photo et les graphes sont importés en quelques instants sur son document.
+
+   		A la fin de la conférence, Bill sauvegarde ses prises de notes. Ce n’est pas la première conférence auquel Bill assiste, et il est un peu perdu au moment de choisir un nom pour son fichier. Grâce à 		l’application, il se repère facilement dans son organisation de prise de notes, et l’application lui propose un nom.
+    
+	    A la suite de la conférence, Bill souhaite compléter ses notes. Il recherche des prises de notes d’autres personnes sur la même conférence. Grâce au système de notation de l’application, il choisit les 		meilleurs prises de notes et complète les siennes. Il décide également de suivre le fichier représentant les slides présentés pendant la présentation. Le médecin corrige par la suite quelques slides où 		plusieurs fautes s’étaient glissées. L’application met à jour la version de Bill qui ne contient donc plus de fautes.
