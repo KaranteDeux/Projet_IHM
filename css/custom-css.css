@@ -90,6 +90,16 @@ body
     margin-right: 10px !important;
 }
 
+.upmin img
+{
+    background-color: black !important;
+}
+.upmin:hover
+{
+    opacity:0.6;
+    cursor: crosshair;
+}
+
 /** Styling of the notes **/
 
 

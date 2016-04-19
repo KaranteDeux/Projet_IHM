@@ -375,14 +375,33 @@
     <div class="col s12 m4 l3 svl date2 note-item waves-effect waves-white">
         <div class="card blue hoverable">
             <div class="card-image">
-                <img src="http://materializecss.com/images/office.jpg" class="responsive-img">
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+
+                        </li>
+                        <li>
+                            <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+
+                        </li>
+                        <li>
+                            <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+
+                        </li>
+                        <li>
+                            <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+
+                        </li>
+                    </ul>
+                </div>
                 <div class="options-activator activator right">
                     <i class="material-icons">more_vert</i>
                 </div>
 
             </div>
             <div class="card-content">
-                <a href="edit_note.html"><i class="material-icons edit-note">create</i></a><span class="card-title activator">Card Title</span>
+                <a href="edit_note_img.html"><i class="material-icons edit-note">create</i></a><span class="card-title activator">Card Title</span>
                 <p class="card-content-p">I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.</p>
                 <div class="card-footer"> <p class="right small-details">14-03-2015 - <b>SVL</b> - Antonin</p></div>
@@ -767,6 +786,7 @@
     $(document).ready(function () {
 
         $('.noutes').hide();
+        $('.slider').slider({heigh: 10, indicators : false, interval : 3000});
 
         var $notes = $('.row').packery({
             itemSelector: '.note-item',

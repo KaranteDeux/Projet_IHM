@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modify your note</title>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/custom-css.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+
+<div class="progress" style="display: none; position: absolute; top: 50%;">
+	<div class="indeterminate"></div>
+</div>
+
+<div class="overlay-note"></div>
+
+<!-- Navigation bar & Slideout -->
+<nav class="transparent z-depth-0">
+
+	<ul class="right">
+		<li><input type="text" class="search-bar"></li>
+		<li><a href="#" class="open-searchbar"><i class="material-icons">search</i></a></li>
+	</ul>
+
+	<ul id="slide-out" class="side-nav">
+		<div class="user-details">
+			<div class="user-avatar">
+				<img src="https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg" alt="" class="circle">
+                <span class="user-name"><b>Ibrahim Eustachys</b> <a class="right" href="profile.html"><i
+						class="tiny material-icons">keyboard_arrow_down</i></a></span>
+				<span class="user-rank">Noteur pro</span>
+			</div>
+		</div>
+		<li><a href="index.html">Go Home</a></li>
+		<li><a href="create_note.html">Add a note</a></li>
+		<li><a href="map.html">View users location</a></li>
+	</ul>
+
+	<ul class="left">
+		<li><a href="#" data-activates="slide-out" class="open-sidenav"><i class="mdi-navigation-menu"></i></a></li>
+	</ul>
+</nav>
+
+
+<div class="container">
+	<div class="row">
+		<h3>Modify your note !</h3>
+		<form class="col s12 add-note-contaier">
+			<div class="row">
+				<div class="input-field col s4">
+					<input placeholder="Note title" id="first_name" type="text" class="validate" value="Note M3DS - Cours du Mardi 19">
+					<label class="active" for="first_name">Title of the note</label>
+				</div>
+
+				<div class="input-field col s4">
+					<select class="module-select">
+						<option value="" disabled selected>Choose your option</option>
+						<option value="1">IHM</option>
+						<option value="2">CAR</option>
+						<option value="3" selected>M3DS</option>
+						<option value="3">SVL</option>
+					</select>
+					<label>Materialize Select</label>
+				</div>
+
+				<div class="input-field col s4">
+					<select class="color-select validate">
+						<option value="" disabled selected>Choose Note color</option>
+						<option class="" value="1">RED</option>
+						<option value="2" selected>GREEN</option>
+						<option value="3">YELLOW</option>
+						<option value="3">BLUE</option>
+					</select>
+					<label>Color of the note</label>
+				</div>
+			</div>
+
+			<div class="row">
+
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<textarea id="textarea1" class="materialize-textarea validate">
+I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.
+I am a very simple card. I am good at containing small bits of information.
+I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
+I am convenient because I require little markup to use effectively.
+					</textarea>
+					<label for="textarea1" class="active">Content of your note</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s2 upmin"><img class="responsive-img uploaded-image0" src="http://lorempixel.com/580/580/nature/1"></div>
+				<div class="col s2 upmin"><img class="responsive-img uploaded-image1" src="http://lorempixel.com/580/580/nature/2"></div>
+				<div class="col s2 upmin"><img class="responsive-img uploaded-image2" src="http://lorempixel.com/580/580/nature/3"></div>
+				<div class="col s2 upmin"><img class="responsive-img uploaded-image3" src="http://lorempixel.com/580/580/nature/4"></div>
+
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<input id="email" type="text" class="validate" value="Nabil Maiz | John Doe" >
+					<label for="email" class="active">Your collaborators</label>
+				</div>
+			</div>
+
+			<div class="row right">
+				<a class="waves-effect waves-teal btn-flat" type="reset">Clear form</a>
+				<a class="waves-effect waves-teal btn save-note" type="submit" href="#">Apply changes</a>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="fixed-action-btn horizontal horizontal-fixed" style="bottom: 60px; right: 24px;">
+	<a class="btn-floating btn-large red" style="opacity: 0">
+		<i class="large material-icons">mode_edit</i>
+	</a>
+	<ul>
+		<li><a class="btn-floating btn-large red IHM">IHM</a></li>
+		<li><a class="btn-floating btn-large orange darken-1 CAR">CAR</a></li>
+		<li><a class="btn-floating btn-large green M3DS">M3DS</a></li>
+		<li><a class="btn-floating btn-large blue SVL">SVL</a></li>
+		<li><a class="btn-floating btn-large grey ALL">ALL</a></li>
+	</ul>
+</div>
+
+<div class="fixed-action-btn first-fixed" style="bottom: 45px; right: 24px;">
+	<a class="btn-floating btn-large red z-depth-3">
+		<i class="material-icons">settings</i>
+	</a>
+	<ul>
+		<li><a class="btn-floating orange lighten-1 tooltipped" data-position="left" data-delay="5" data-tooltip="Edit your profile"><i class="material-icons">person</i></a></li>
+		<li><a class="btn-floating red organize tooltipped" data-position="left" data-delay="5" data-tooltip="Sort notes"><i class="material-icons">reorder</i></a></li>
+		<li><a class="btn-floating green tooltipped share-trigger" data-position="left" data-delay="5" data-tooltip="Share displayed note"  href="#share_active_note"><i class="material-icons">share</i></a></li>
+		<li><a class="btn-floating blue tooltipped" data-position="left" data-delay="5" data-tooltip="Write a new note" href="create_note.html"><i class="material-icons">fiber_new</i></a></li>
+	</ul>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/massonry.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/custom-interface.js"></script>
+<script src="js/notes-interface.js"></script>
+
+<script>
+	$(document).ready(function () {
+		$('select').material_select();
+
+
+		var $notes = $('.row').packery({
+			itemSelector: '.note-item',
+			transitionDuration: 0,
+			percentPosition: true,
+			columnWidth: '.m4',
+		});
+		var $items = $notes.find('.note-item').draggable();
+
+		$notes.packery( 'bindUIDraggableEvents', $items );
+
+		$('.organize').hover(function(){
+			$('.horizontal-fixed').openFAB();
+		});
+
+
+		$('.color-select').on('change', function(){
+			$('.color-select').css('background-color', $( ".color-select option:selected" ).text())
+		});
+	});
+</script>
+<script>
+
+	$('.save-note').on('click', function(){
+		$('.overlay-note').css('display', 'block');
+		$('.progress').css('display', 'block');
+		$('.progress').css('z-index', '10000000');
+
+		setInterval(redirectFunc, 700)
+
+		function  redirectFunc() {
+			window.location.replace("index.html");
+			Materialize.toast('Note saved !', 4000) // 4000 is the duration of the toast
+		}
+	});
+</script>
+
+</body>
+</html>
