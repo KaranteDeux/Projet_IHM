@@ -34,6 +34,7 @@
                 <span class="user-rank">Noteur pro</span>
             </div>
         </div>
+        <li><a href="index.html">Go Home</a></li>
         <li><a href="create_note.html">Add a note</a></li>
         <li><a href="map.html">View users location</a></li>
     </ul>
@@ -50,7 +51,7 @@
     <form class="col s12 add-note-contaier">
         <div class="row">
             <div class="input-field col s4">
-                <input placeholder="Note title" id="first_name" type="text" class="validate">
+                <input id="first_name" type="text" class="validate">
                 <label for="first_name">Title of the note</label>
             </div>
 
@@ -96,7 +97,9 @@
         </div>
 
         <div class="row right">
-            <a class="waves-effect waves-teal btn-flat" type="reset">Clear form</a>
+
+            <input type="file" id="testup" style="display: none">
+            <a class="waves-effect waves-teal btn" type="reset" id="addimage">Add Image</a>
             <a class="waves-effect waves-teal btn save-note" type="submit" href="#">Create note</a>
         </div>
     </form>
@@ -166,6 +169,11 @@
 
     function timer() {
     }
+
+    $('#addimage').on('click', function(){
+        $('#testup').click();
+    });
+
     Materialize.toast('Note saved !', 4000) // 4000 is the duration of the toast
 
     $('.save-note').on('click', function(){

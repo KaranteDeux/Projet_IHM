@@ -73,6 +73,13 @@ body
     margin : 0 0 3px 10px;
 }
 
+.edit-note
+{
+    margin-right: 10px;
+    vertical-align: sub;
+    color: #424242;
+}
+
 /** Styling of the notes **/
 
 
@@ -158,6 +165,8 @@ nav
 /** Styling for the navbar **/
 
 
+
+
 /** Styling the rating stars **/
 
 .hour{
@@ -165,8 +174,6 @@ nav
 	margin-left : 20px;
 }
 
-
-/** Styling the rating stars **/
 
 #modal_rate
 {
