@@ -80,6 +80,16 @@ body
     color: #424242;
 }
 
+.collaborators
+{
+    margin-bottom: 10px;
+}
+
+.chip
+{
+    margin-right: 10px !important;
+}
+
 /** Styling of the notes **/
 
 
@@ -216,6 +226,9 @@ nav
 /** Styling share modal **/
 
 
+
+
+
 /** Styling add not form **/
 
 .add-note-contaier
@@ -270,6 +283,9 @@ nav
 }
 /** Styling of the cover **/
 
+
+
+
 /** Styling of the profile **/
 
 .profil-tab
@@ -279,6 +295,9 @@ nav
 }
 
 /** Styling of the profile **/
+
+
+
 
 /** Styling of the friends **/
 
