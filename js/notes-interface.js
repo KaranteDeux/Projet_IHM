@@ -6,6 +6,7 @@ $(document).ready(function () {
 
         var $note = $(this).parent().parent().parent()[0];
         var $overlay = $('.overlay-note')[0];
+        var $collabs = $(this).parent().next()[0];
 
         $(this).parent().parent().parent().addClass('opened-note-item');
 
@@ -19,19 +20,31 @@ $(document).ready(function () {
         $note.style.setProperty('width', '60%');
         $note.style.setProperty('transition', 'all .25s');
         $note.style.setProperty('transition-timing-function', 'ease-in-out');
+
         $overlay.style.setProperty('display', 'block');
+
+        $collabs.style.setProperty('display', 'block');
+        $(this).parent().next().addClass("active-action-content");
     });
 
     $('.overlay-note').on('click', function () {
 
         var $note = $('.opened-note-item')[0];
+        var $collabs = $('.active-action-content')[0];
+        var $details = $('.card-footer')[0];
+
+        this.style.setProperty('display', 'none');
+
         $note.style.setProperty('left', $beforeLeft);
         $note.style.setProperty('top', $beforeTop);
         $note.style.removeProperty('width');
         $note.style.removeProperty('z-index');
 
-        this.style.setProperty('display', 'none');
+        $collabs.style.setProperty('display', 'none');
 
+        $details.style.setProperty('display', 'block');
+
+        $('.active-action-content').removeClass("active-action-content");
         $('.opened-note-item').removeClass("opened-note-item");
     });
 
@@ -105,8 +118,7 @@ $(document).ready(function () {
 
     $('.friend-card-action').on('click', function(e){
         e.preventDefault();
-        console.log("lzlfjezfjez");
-       $(this).parent().parent().fadeOut('medium');
+        $(this).parent().parent().fadeOut('medium');
         Materialize.toast("The friend has been deleted !", 1000);
     });
 

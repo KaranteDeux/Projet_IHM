@@ -80,6 +80,26 @@ body
     color: #424242;
 }
 
+.collaborators
+{
+    margin-bottom: 10px;
+}
+
+.chip
+{
+    margin-right: 10px !important;
+}
+
+.upmin img
+{
+    background-color: black !important;
+}
+.upmin:hover
+{
+    opacity:0.6;
+    cursor: crosshair;
+}
+
 /** Styling of the notes **/
 
 
@@ -216,6 +236,9 @@ nav
 /** Styling share modal **/
 
 
+
+
+
 /** Styling add not form **/
 
 .add-note-contaier
@@ -270,6 +293,9 @@ nav
 }
 /** Styling of the cover **/
 
+
+
+
 /** Styling of the profile **/
 
 .profil-tab
@@ -278,7 +304,15 @@ nav
     margin-top: -91px !important;
 }
 
+.stats-tab
+{
+    margin-bottom: 250px !important;
+}
+
 /** Styling of the profile **/
+
+
+
 
 /** Styling of the friends **/
 
