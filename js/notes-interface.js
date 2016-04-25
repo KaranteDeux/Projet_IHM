@@ -123,6 +123,12 @@ $(document).ready(function () {
 
     });
 
+    $('#discard').on("click", function(){
+        $(this).slideUp("medium");
+        $('#check').slideUp('medium');
+        $('.modified-note').remove();
+    });
+
 
     $('.friend-card-action').on('click', function(e){
         e.preventDefault();
