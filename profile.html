@@ -123,10 +123,49 @@
     </div>
 
     <div id="test2" class="col s12 profil-tab friends-tab">
-        <h3>Your friends list</h3>
 
-        <ul>
-            <li class="col s12 m4">
+        <div class="row">
+            <div class="col s12">
+                <h3>Find new friends </h3>
+                <div class="row">
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Full Name</label>
+                    </div>
+
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">work</i>
+                        <input id="ico" type="text" class="validate">
+                        <label for="ico">University</label>
+                    </div>
+
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">grade</i>
+                        <input id="zef" type="text" class="validate">
+                        <label for="zef">Grade</label>
+                    </div>
+
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">class</i>
+                        <input id="efd" type="text" class="validate">
+                        <label for="efd">Class</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12" id="found_friends">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <ul class="col s12" id="friendsList">
+                <h4>Your friends list</h4>
+
+                <li class="col s12 m4">
                 <div class="card grey lighten-3 friend-card hoverable">
                     <div class="card-content white-text friend-card-content">
                         <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/marcogomes/128.jpg" alt=""></p>
@@ -144,7 +183,7 @@
                 <div class="card grey lighten-3 friend-card hoverable">
                     <div class="card-content white-text friend-card-content">
                         <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/shalt0ni/128.jpg" alt=""></p>
-                        <span class="card-title" style="color: black; line-height: 30px">Youss Konakri</span><br>
+                        <span class="card-title" style="color: black; line-height: 30px">Chris Prolls</span><br>
                         <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
                         <span class="small-details" style="color: dimgrey"> Computer Science</span>
                     </div>
@@ -158,7 +197,7 @@
                 <div class="card grey lighten-3 friend-card hoverable">
                     <div class="card-content white-text friend-card-content">
                         <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/abinav_t/128.jpg" alt=""></p>
-                        <span class="card-title" style="color: black; line-height: 30px">Youss Konakri</span><br>
+                        <span class="card-title" style="color: black; line-height: 30px">Race Ta</span><br>
                         <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
                         <span class="small-details" style="color: dimgrey"> Computer Science</span>
                     </div>
@@ -172,7 +211,7 @@
                 <div class="card grey lighten-3 friend-card hoverable">
                     <div class="card-content white-text friend-card-content">
                         <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jadlimcaco/128.jpg" alt=""></p>
-                        <span class="card-title" style="color: black; line-height: 30px">Youss Konakri</span><br>
+                        <span class="card-title" style="color: black; line-height: 30px">Marc Siste</span><br>
                         <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
                         <span class="small-details" style="color: dimgrey"> Computer Science</span>
                     </div>
@@ -186,7 +225,7 @@
                 <div class="card grey lighten-3 friend-card hoverable">
                     <div class="card-content white-text friend-card-content">
                         <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/rem/128.jpg" alt=""></p>
-                        <span class="card-title" style="color: black; line-height: 30px">Youss Konakri</span><br>
+                        <span class="card-title" style="color: black; line-height: 30px">Anto Nain</span><br>
                         <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
                         <span class="small-details" style="color: dimgrey"> Computer Science</span>
                     </div>
@@ -200,7 +239,7 @@
                 <div class="card grey lighten-3 friend-card hoverable">
                     <div class="card-content white-text friend-card-content">
                         <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/csswizardry/128.jpg" alt=""></p>
-                        <span class="card-title" style="color: black; line-height: 30px">Youss Konakri</span><br>
+                        <span class="card-title" style="color: black; line-height: 30px">Kiffe Kif</span><br>
                         <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
                         <span class="small-details" style="color: dimgrey"> Computer Science</span>
                     </div>
@@ -214,7 +253,7 @@
                 <div class="card grey lighten-3 friend-card hoverable">
                     <div class="card-content white-text friend-card-content">
                         <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt=""></p>
-                        <span class="card-title" style="color: black; line-height: 30px">Youss Konakri</span><br>
+                        <span class="card-title" style="color: black; line-height: 30px">Dit Mitri</span><br>
                         <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
                         <span class="small-details" style="color: dimgrey"> Computer Science</span>
                     </div>
@@ -223,8 +262,9 @@
                     </div>
                 </div>
             </li>
-
         </ul>
+        </div>
+
     </div>
 
     <div id="test3" class="col s12 profil-tab stats-tab">
@@ -260,8 +300,6 @@
                 <li class="collection-item red accent-2">Have 10 notes rated 5 stars. <span class="right"><b>+40%</b></span></li>
             </ul>
         </div>
-
-
     </div>
 </div>
 
@@ -335,6 +373,57 @@
             window.location.replace("profile.html");
             Materialize.toast('Note saved !', 4000); // 4000 is the duration of the toast
         }
+    });
+
+    var contentToInject = `<ul class="collection">
+
+            <li class="collection-item avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg" alt="" class="circle">
+                <span class="title"><b>Canaan Haimo</b></span>
+                <p>Master 1 - Lille 1<br></p>
+                <a href="#!" id="addfriendbtn" class="secondary-content btn">Add friend</a>
+            </li>
+
+            <li class="collection-item avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg" alt="" class="circle">
+                <span class="title"><b>Grant Dimas</b></span>
+                <p>Licence 3 - Lille 1<br></p>
+                <a href="#!" id="addfriendbtn" class="secondary-content btn">Add friend</a>
+
+            </li>
+
+            <li class="collection-item avatar">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/mlane/128.jpg" alt="" class="circle">
+                <span class="title"><b>Cronus Dobrosław</b></span>
+                <p>Master 2 - Lille 2<br></p>
+                <a href="#!" id="addfriendbtn" class="secondary-content btn">Add friend</a>
+            </li>
+        </ul>`
+    var friendToadd = `<li class="col s12 m4">
+                <div class="card grey lighten-3 friend-card hoverable">
+                    <div class="card-content white-text friend-card-content">
+                        <p class="left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg" alt=""></p>
+                        <span class="card-title" style="color: black; line-height: 30px">Canaan Haimo</span><br>
+                        <span class="small-details" style="color: black"> University of Lille 1 - Master 1</span><br>
+                        <span class="small-details" style="color: dimgrey"> Computer Science</span>
+                    </div>
+                    <div class="card-action friend-card-action">
+                        <a href="#" class="btn">Remove</a>
+                    </div>
+                </div>
+            </li>`;
+
+    $('#found_friends').hide();
+    $('#icon_prefix').change(function(){
+       $('#found_friends').html(contentToInject).fadeIn();
+        $('#found_friends').slideDown();
+
+        $('#addfriendbtn').on('click', function(){
+            Materialize.toast('Friend has been added ! ', 4000);
+            $(this).text("He is now your friend !");
+            $(this).addClass('disabled');
+            $('#friendsList').append(friendToadd);
+        });
     });
 </script>
 </body>
