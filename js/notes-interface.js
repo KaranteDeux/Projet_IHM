@@ -104,6 +104,14 @@ $(document).ready(function () {
 				$grid.isotope({filter : '.date5'});
 			}else if(text == "21-03-2015"){
 				$grid.isotope({filter : '.date6'});
+			}else if(text == "ME"){
+				$grid.isotope({filter : '.perso1'});
+			}else if(text == "MOHAMED"){
+				$grid.isotope({filter : '.perso2'});
+			}else if(text == "NABIL"){
+				$grid.isotope({filter : '.perso3'});
+			}else if(text == "ANTONIN"){
+				$grid.isotope({filter : '.perso4'});
 			}
 		}
 	});
